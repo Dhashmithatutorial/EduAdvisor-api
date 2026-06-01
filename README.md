@@ -149,7 +149,7 @@ uvicorn backend.main:app --reload
 
 ### Open Swagger Documentation
 
-http://127.0.0.1:8000/docs
+https://eduadvisor-api.onrender.com/docs
 
 ### Run Frontend
 
