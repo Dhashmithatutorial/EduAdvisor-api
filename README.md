@@ -171,77 +171,77 @@ Open frontend pages using Live Server in Visual Studio Code.
 
 ## Home Page
 
-![Home Page](screenshots/Index_Page.png)
+![Home Page](screenshots/Index_Page.png.png)
 
 ## Login Page
 
-![Login Page](screenshots/Login_Page.png)
+![Login Page](screenshots/Login_Page.png.png)
 
 ## Signup Page
 
-![Signup Page](screenshots/Signup_Page.png)
+![Signup Page](screenshots/Signup_Page.png.png)
 
 ## Dashboard
 
-![Dashboard](screenshots/Dashboard1.png)
+![Dashboard](screenshots/Dashboard1.png.png)
 
 ## Dashboard Recommendations
 
-![Dashboard Recommendations](screenshots/Dashboard2.png)
+![Dashboard Recommendations](screenshots/Dashboard2.png.png)
 
 ## Student Management
 
-![Student Management](screenshots/Student_Management.png)
+![Student Management](screenshots/Student_Management.png.png)
 
 ## Course Management
 
-![Course Management](screenshots/Course_Management.png)
+![Course Management](screenshots/Course_Management.png.png)
 
 ## Career Insights
 
-![Career Insights](screenshots/Career_Insights.png)
+![Career Insights](screenshots/Career_Insights.png.png)
 
 ## Learning Roadmap
 
-![Roadmap](screenshots/Roadmap.png)
+![Roadmap](screenshots/Roadmap.png.png)
 
 ## GPA Simulator
 
-![GPA Simulator](screenshots/GPA_Simulator.png)
+![GPA Simulator](screenshots/GPA_Simulator.png.png)
 
 # API Testing Using Thunder Client
 
 ## GET Student API
 
-![GET Student](screenshots/GET_Student_API.png)
+![GET Student](screenshots/GET_Student_API.png.png)
 
 ## POST Student API
 
-![POST Student](screenshots/POST_Student_API.png)
+![POST Student](screenshots/POST_Student_API.png.png)
 
 ## PUT Student API
 
-![PUT Student](screenshots/PUT_Student_API.png)
+![PUT Student](screenshots/PUT_Student_API.png.png)
 
 ## DELETE Student API
 
-![DELETE Student](screenshots/DELETE_Student_API.png)
+![DELETE Student](screenshots/DELETE_Student_API.png.png)
 
 ## GET Course API
 
-![GET Course](screenshots/GET_Course_API.png)
+![GET Course](screenshots/GET_Course_API.png.png)
 
 ## POST Course API
 
-![POST Course](screenshots/POST_Course_API.png)
+![POST Course](screenshots/POST_Course_API.png.png)
 
 ## PUT Course API
 
-![PUT Course](screenshots/PUT_Course_API.png)
+![PUT Course](screenshots/PUT_Course_API.png.png)
 
 ## DELETE Course API
 
-![DELETE Course](screenshots/DELETE_Course_API.png)
+![DELETE Course](screenshots/DELETE_Course_API.png.png)
 
 
 ## Team Members
