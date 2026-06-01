@@ -1,6 +1,11 @@
-from fastapi import FastAPI
+from fastapi import FastAPI, Depends
 from fastapi.middleware.cors import CORSMiddleware
+from sqlalchemy.orm import Session
+
 from backend.database.db_init import create_tables
+from backend.app.dependencies import get_db
+from backend.models.user import User
+
 from backend.routers.auth_routes import (
     router as auth_router
 )
@@ -22,6 +27,7 @@ from backend.routers.gpa_routes import (
 from backend.routers.roadmap_routes import (
     router as roadmap_router
 )
+
 app = FastAPI(
     title="EduAdvisor API",
     version="1.0.0",
@@ -36,21 +42,33 @@ app.include_router(student_router)
 app.include_router(student_course_router)
 app.include_router(recommendation_router)
 app.include_router(gpa_router)
-app.include_router(
-    roadmap_router
-)
+app.include_router(roadmap_router)
+
+
 @app.get("/")
 def home():
     return {
         "message": "Academic Advisor API Running Successfully"
     }
+
+
+@app.get("/debug-users")
+def debug_users(db: Session = Depends(get_db)):
+    users = db.query(User).all()
+
+    return [
+        {
+            "email": user.email,
+            "password": user.password
+        }
+        for user in users
+    ]
+
+
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],
-
     allow_credentials=True,
-
     allow_methods=["*"],
-
     allow_headers=["*"],
 )
