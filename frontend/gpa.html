@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>GPA Impact Simulator</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- Navbar -->
+
+    <div class="card navbar">
+
+        <div>
+
+            <h1>
+                 GPA Simulator
+            </h1>
+
+            <p style="
+            color:gray;
+            ">
+                Predict Academic Performance
+            </p>
+
+        </div>
+
+        <div>
+
+            <button
+            onclick="
+            window.location.href='dashboard.html'
+            ">
+                Dashboard
+            </button>
+
+        </div>
+
+    </div>
+
+    <!-- Statistics -->
+
+    <div class="stats-grid"
+    style="
+    margin-top:20px;
+    margin-bottom:20px;
+    ">
+
+        <div class="card">
+
+            <h3>
+                 Credits
+            </h3>
+
+            <h1>
+                20
+            </h1>
+
+        </div>
+
+        <div class="card">
+
+            <h3>
+                 GPA
+            </h3>
+
+            <h1>
+                8.4
+            </h1>
+
+        </div>
+
+        <div class="card">
+
+            <h3>
+                Goal
+            </h3>
+
+            <h1>
+                9.0
+            </h1>
+
+        </div>
+
+        <div class="card">
+
+            <h3>
+                 Growth
+            </h3>
+
+            <h1>
+                +10%
+            </h1>
+
+        </div>
+
+    </div>
+
+    <!-- Calculator -->
+
+    <div class="card">
+
+        <h2>
+            GPA Prediction Calculator
+        </h2>
+
+        <br>
+
+        <input
+        type="number"
+        id="current_gpa"
+        placeholder="Current GPA"
+        >
+
+        <br><br>
+
+        <input
+        type="number"
+        id="current_credits"
+        placeholder="Current Credits"
+        >
+
+        <br><br>
+
+        <input
+        type="number"
+        id="new_course_credits"
+        placeholder="New Course Credits"
+        >
+
+        <br><br>
+
+        <input
+        type="number"
+        id="expected_grade_points"
+        placeholder="Expected Grade Points"
+        >
+
+        <br><br>
+
+        <button
+        onclick="simulateGPA()">
+            Calculate GPA
+        </button>
+
+        <br><br>
+
+        <div
+        id="resultCard"
+        style="
+        display:none;
+        ">
+
+            <div class="card">
+
+                <h2>
+                    Prediction Result
+                </h2>
+
+                <h1
+                id="result">
+                </h1>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+
+    <div class="footer">
+
+        GPA Impact Prediction Engine
+
+        <br><br>
+
+        EduAdvisor API © 2026
+
+    </div>
+
+</div>
+
+<script src="js/api.js"></script>
+<script src="js/gpa.js"></script>
+
+</body>
+
+</html>

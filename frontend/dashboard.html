@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>EduAdvisor API Dashboard</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- Navbar -->
+
+ <div class="card navbar">
+
+    <div class="logo-section">
+
+        <h1>🎓 EduAdvisor API</h1>
+
+        <p class="subtitle">
+            Academic Guidance Platform
+        </p>
+
+    </div>
+
+    <div class="nav-buttons">
+
+        <button onclick="window.location.href='students.html'">
+            Students
+        </button>
+
+        <button onclick="window.location.href='courses.html'">
+            Courses
+        </button>
+
+        <button onclick="window.location.href='career.html'">
+            Career
+        </button>
+
+        <button onclick="window.location.href='roadmap.html'">
+            Roadmap
+        </button>
+
+        <button onclick="window.location.href='gpa.html'">
+            GPA
+        </button>
+
+        <button onclick="logout()">
+            Logout
+        </button>
+
+    </div>
+
+</div>
+
+    <!-- Student Profile -->
+
+    <div
+    id="studentCard"
+    class="card"
+    style="
+    margin-top:20px;
+    margin-bottom:20px;
+    ">
+    </div>
+
+    <!-- Stats -->
+
+    <div
+    id="stats"
+    class="stats-grid"
+    style="
+    margin-bottom:20px;
+    ">
+    </div>
+
+    <!-- Analytics -->
+
+    <div
+    id="analytics"
+    class="card"
+    style="
+    margin-bottom:20px;
+    ">
+    </div>
+
+    <!-- Features -->
+
+    <div
+    class="card"
+    style="
+    margin-bottom:20px;
+    ">
+
+        <h2>
+             Platform Features
+        </h2>
+
+        <div class="feature-item">
+             Course Recommendation Engine
+        </div>
+
+        <div class="feature-item">
+            Career Insights & Guidance
+        </div>
+
+        <div class="feature-item">
+             Personalized Learning Roadmap
+        </div>
+
+        <div class="feature-item">
+             GPA Impact Simulator
+        </div>
+
+        <div class="feature-item">
+             JWT Authentication System
+        </div>
+
+    </div>
+
+    <!-- Recommended Courses -->
+
+    <h2 style="
+    color:white;
+    font-size:32px;
+    margin-bottom:20px;
+    ">
+        ⭐ Recommended Courses
+    </h2>
+
+    <div
+    id="recommendations"
+    class="course-grid">
+    </div>
+
+    <!-- Footer -->
+
+    <div class="footer">
+
+         EduAdvisor API © 2026
+
+        <br><br>
+
+        Built with FastAPI • SQLite • JWT • Recommendation Engine
+
+    </div>
+
+</div>
+
+<script src="js/api.js"></script>
+<script src="js/dashboard.js"></script>
+
+</body>
+
+</html>

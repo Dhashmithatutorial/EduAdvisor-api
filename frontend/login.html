@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Login - EduAdvisor API</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<div class="login-container">
+
+    <h1>
+        🎓 EduAdvisor API
+    </h1>
+
+    <p style="
+    color:gray;
+    margin-bottom:30px;
+    ">
+        Secure Student Login Portal
+    </p>
+
+    <input
+    type="email"
+    id="email"
+    placeholder="Enter Email"
+    >
+
+    <br><br>
+
+    <input
+    type="password"
+    id="password"
+    placeholder="Enter Password"
+    >
+
+    <br><br>
+
+    <button
+    onclick="login()"
+    style="
+    width:100%;
+    ">
+        Login
+    </button>
+    <p>
+
+    Don't have an account?
+
+    <a href="signup.html">
+        Sign Up
+    </a>
+
+</p>
+
+    <br><br>
+
+    <p id="message"></p>
+
+    <hr
+    style="
+    margin:20px 0;
+    ">
+
+    <p style="
+    color:gray;
+    ">
+        Academic Advisory System
+    </p>
+
+</div>
+
+<script src="js/api.js"></script>
+<script src="js/login.js"></script>
+
+</body>
+
+</html>

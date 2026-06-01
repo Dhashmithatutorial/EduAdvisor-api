@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Course Management</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- Header -->
+
+    <div class="card">
+
+        <div class="page-header">
+
+            <div>
+
+                <h1>
+                    Course Management
+                </h1>
+
+                <p style="
+                color:#64748b;
+                margin-top:8px;
+                ">
+                    Manage Academic Courses
+                </p>
+
+            </div>
+
+            <button
+                onclick="
+                window.location.href='dashboard.html'
+                "
+            >
+                Dashboard
+            </button>
+
+        </div>
+
+    </div>
+
+    <!-- Statistics -->
+
+    <div class="stats-grid">
+
+        <div class="stat-card">
+
+            <h3>Total Courses</h3>
+
+            <h1 id="courseCount">
+                0
+            </h1>
+
+        </div>
+
+        <div class="stat-card">
+
+            <h3>Categories</h3>
+
+            <h1>
+                3
+            </h1>
+
+        </div>
+
+        <div class="stat-card">
+
+            <h3>Average Credits</h3>
+
+            <h1>
+                4
+            </h1>
+
+        </div>
+
+    </div>
+
+    <!-- Add Course -->
+
+    <div class="card">
+
+        <h2>
+            Add Course
+        </h2>
+
+        <div class="form-grid">
+
+            <input
+                type="text"
+                id="course_name"
+                placeholder="Course Name"
+            >
+
+            <input
+                type="number"
+                id="credits"
+                placeholder="Credits"
+            >
+
+            <input
+                type="text"
+                id="category"
+                placeholder="Category"
+            >
+
+            <input
+                type="text"
+                id="prerequisite"
+                placeholder="Prerequisite"
+            >
+
+        </div>
+
+        <button
+            onclick="saveCourse()"
+        >
+            Save Course
+        </button>
+
+    </div>
+
+    <!-- Course Records -->
+
+    <div class="card">
+
+        <div style="
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+        margin-bottom:20px;
+        ">
+
+            <h2 style="margin:0;">
+                Course Records
+            </h2>
+
+            <button
+                onclick="loadCourses()"
+            >
+                Refresh Courses
+            </button>
+
+        </div>
+
+        <div style="
+        overflow-x:auto;
+        ">
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Credits</th>
+                        <th>Category</th>
+                        <th>Prerequisite</th>
+                        <th>Actions</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody
+                    id="courseTable"
+                >
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="js/api.js"></script>
+<script src="js/courses.js"></script>
+
+</body>
+
+</html>
