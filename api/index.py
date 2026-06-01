@@ -1,8 +1,7 @@
-"""Vercel serverless entrypoint.
+from fastapi import FastAPI
 
-Vercel will invoke this file for requests under `/api/...`.
-We expose the FastAPI app instance defined in `backend.main` as `app`.
-"""
-from backend.main import app
+app = FastAPI()
 
-app = app
+@app.get("/")
+def home():
+    return {"message": "API Working"}
