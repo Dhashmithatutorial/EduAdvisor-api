@@ -63,7 +63,26 @@ def debug_users(db: Session = Depends(get_db)):
         }
         for user in users
     ]
+@app.get("/bcrypt-test")
+def bcrypt_test():
+    from passlib.context import CryptContext
 
+    pwd_context = CryptContext(
+        schemes=["bcrypt"],
+        deprecated="auto"
+    )
+
+    hashed = pwd_context.hash("123456")
+
+    result = pwd_context.verify(
+        "123456",
+        hashed
+    )
+
+    return {
+        "hash": hashed,
+        "verified": result
+    }
 
 app.add_middleware(
     CORSMiddleware,
