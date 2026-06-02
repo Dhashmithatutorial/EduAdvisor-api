@@ -1,7 +1,3 @@
-from fastapi import FastAPI
+from backend.main import app
 
-app = FastAPI()
-
-@app.get("/")
-def home():
-    return {"message": "API Working"}
+app = app
